@@ -220,8 +220,8 @@ source "hyperv-iso" "windows-11-24h2-amd64" {
   cpus         = 2
   memory       = 4096
   generation   = 2
-  boot_wait    = "1s"
-  boot_command = ["<up><wait><up><wait><up><wait><up><wait><up><wait><up><wait><up><wait><up><wait><up><wait><up><wait>"]
+  boot_wait    = "-1s"
+  boot_command = ["<tab><wait><tab><wait><tab><wait><tab><wait><tab><wait><tab><wait><tab><wait><tab><wait><tab><wait><tab><wait>"]
   boot_order   = ["SCSI:0:0"]
   cd_label     = "PROVISION"
   cd_files = [
